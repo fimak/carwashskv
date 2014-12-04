@@ -10,11 +10,13 @@ function initCanvas() {
     car.height = el('cover').offsetHeight;
     car.width = el('cover').offsetWidth;
 
-    var clean = document.createElement('img');
-    clean.src = '/images/sedan_clean.jpg'
-    clean.with = '1302px';
+//    var clean = document.createElement('img');
+//    clean.src = '/images/sedan_clean.jpg';
+//    clean.style.width = "100%";
+//    clean.style.height = "100%";
 
-    console.log(clean);
+//    console.log(car);
+//    console.log(clean);
     if (car.getContext) {
         ctx = car.getContext('2d');
         ctx.strokeStyle = ctx.createPattern(clean, 'no-repeat');
@@ -70,7 +72,7 @@ function initCanvas() {
     car.id = 'car-canvas';
     car.style.position = "absolute";
     car.style.background = 'url(' + dirty.src + ')';
-    car.style.backgroundSize = '1302px 700px';
+    //car.style.backgroundSize = '1302px 700px';
     car.style.left = el('cover').offsetLeft + "px";
     car.style.top = el('cover').offsetTop + "px";
     car.style.width = el('cover').offsetWidth + "px";

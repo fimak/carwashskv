@@ -39,7 +39,6 @@ AppAsset::register($this);
                     echo Nav::widget([
                         'options' => ['class' => 'navbar-nav'],
                         'items' => [
-                            ['label' => 'Главная', 'url' => ['/site/index']],
                             ['label' => 'О нас', 'url' => ['#site-about']],
                             ['label' => 'Услуги и цены', 'url' => ['#site-services']],
                             ['label' => 'Скидки', 'url' => ['#site-discount']],
@@ -61,12 +60,14 @@ AppAsset::register($this);
             'options' => [
                 'id' => 'myCarousel',
                 'class' => 'carousel slide',
-                'data-ride' => 'carousel'
+                'data-ride' => 'carousel',
+                'data-interval' => 'false',
+                'controls' => 'false',
             ],
             'items' => [
                 [
-                    'content' => '<div style="width:100%; height:100%; position:relative; background-size: 1302px 700px;" id="cover" onmousemove="try {draw((event.offsetX||event.layerX), (event.offsetY||event.layerY))} catch(e) {}" onmouseover="{X=0; Y=0}"></div>',
-                    'caption' => '<div class="slider-caption-wrapper"><h4>Легковые от 290 рублей</h4></div>',
+                    'content' => '<div style="width:960px; height:540px; position:relative; background-size: 960px 540px;" id="cover" onmousemove="try {draw((event.offsetX||event.layerX), (event.offsetY||event.layerY))} catch(e) {}" onmouseover="{X=0; Y=0}"></div>',
+                    'caption' => '<div class="slider-caption-wrapper"><span>Легковые от 290 рублей</span></div>',
                     'options' => [''],
                 ],
                 [
