@@ -38,17 +38,17 @@ use yii\bootstrap\Carousel;
                 ],
                 'items' => [
                     [
-                        'content' => '<img src="/images/sedan_clean.jpg"/>',
+                        'content' => '<img src="/carwashskv/images/sedan_clean.jpg"/>',
                         'caption' => '<div class="slider-caption-wrapper"></div>',
                         'options' => [''],
                     ],
                     [
-                        'content' => '<img src="/images/crossover_clean.jpg"/>',
+                        'content' => '<img src="/carwashskv/images/crossover_clean.jpg"/>',
                         'caption' => '<div class="slider-caption-wrapper"></div>',
                         'options' => [''],
                     ],
                     [
-                        'content' => '<img src="/images/truck_clean.jpg"/>',
+                        'content' => '<img src="/carwashskv/images/truck_clean.jpg"/>',
                         'caption' => '<div class="slider-caption-wrapper"></div>',
                         'options' => [''],
                     ],

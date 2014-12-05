@@ -1,5 +1,5 @@
 var dirty = new Image(), clean = new Image(), carsLoad = 0;
-clean.src = '/images/sedan_clean960.jpg';
+clean.src = '/carwashskv/images/sedan_clean960.jpg';
 //clean.width = '1302px';
 //clean.height = '700px';
 //clean.style.width = "1302px";
@@ -9,7 +9,7 @@ clean.src = '/images/sedan_clean960.jpg';
 //clean.naturalHeight = '700px';
 //clean.clientWidth = '1302px';
 //clean.style = 'width: 1302px;';
-dirty.src = '/images/sedan_dirty960.jpg';
+dirty.src = '/carwashskv/images/sedan_dirty960.jpg';
 d = 75;
 window.onload = initCanvas
 

@@ -71,12 +71,12 @@ AppAsset::register($this);
                     'options' => [''],
                 ],
                 [
-                    'content' => '<img src="/images/crossover_clean.jpg"/>',
+                    'content' => '<img src="/carwashskv/images/crossover_clean.jpg"/>',
                     'caption' => '<div class="slider-caption-wrapper"><h4>Кроссоверы от 590 рублей</h4></div>',
                     'options' => [''],
                 ],
                 [
-                    'content' => '<img src="/images/truck_clean.jpg"/>',
+                    'content' => '<img src="/carwashskv/images/truck_clean.jpg"/>',
                     'caption' => '<div class="slider-caption-wrapper"><h4>Габаритные от 890 рублей</h4></div>',
                     'options' => [''],
                 ],
