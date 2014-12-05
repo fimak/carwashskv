@@ -3,7 +3,7 @@ use yii\bootstrap\Carousel;
 ?>
 <div id="site-photo">
     <div class="container">
-        <div class="col-md-4 dark-wrap">
+        <div class="albums_list dark-wrap">
             <h2 class="yellow nomargin">Фото и видео</h2>
             <ul>
                 <li>Альбом 1</li>
@@ -29,7 +29,7 @@ use yii\bootstrap\Carousel;
                 <li>Альбом 21</li>
             </ul>
         </div>
-        <div class="col-md-8">
+        <div class="">
             <?php echo Carousel::widget([
                 'options' => [
                     'id' => 'photoCarousel',

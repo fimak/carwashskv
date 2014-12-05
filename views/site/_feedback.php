@@ -6,11 +6,11 @@ use yii\helpers\Html;
 ?>
 <div id="site-feedback">
     <div class="container">
-        <div class="col-md-9 dark-wrap">
+        <div class="dark-wrap">
             <h2 class="yellow nomargin">Отзывы об автомойке</h2>
             <?php foreach ($feedbacks as $feedback) : ?>
-                <div class="col-md-12">
-                    <div class="light-wrap">
+                <div class="">
+                    <div class="light-wrap review">
                         <?php
                             echo StarRating::widget([
                                 'name' => 'rating_1',
@@ -24,7 +24,7 @@ use yii\helpers\Html;
                 </div>
             <?php endforeach; ?>
         </div>
-        <div class="col-md-3">
+        <div class="">
             <?= Html::button(
                 'Оставить отзыв',
                 [

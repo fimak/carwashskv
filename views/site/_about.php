@@ -1,13 +1,10 @@
 <div id="site-about">
-    <div class="container">
-        <div class="col-md-16 dark-wrap">
-            <div class="col-md-7 picture-wrapper">
-                <img src="<?= $about->image ?>" alt="Автомойка"/>
-                <div class="picture-description"><?= $about->image_description ?></div>
-            </div>
-            <h2 class="yellow nomargin"><?= $about->title ?></h2>
+    <div class="container2">
+        <div class=" dark-wrap">
+            <h2><?= $about->title ?></h2>
+            <img src="<?= $about->image ?>" alt="Автомойка"/>
+            <div class="picture-description"><?= $about->image_description ?></div>
             <?= $about->text ?>
-
         </div>
     </div>
 </div>

@@ -19,21 +19,21 @@ body{
     color: yellow;
 }
 .dark-wrap {
-background: #000000;
-opacity: 0.75;
-color: #d7d7d7;
+    background: rgb(51, 51, 51);
+    color: #d7d7d7;
 }
-.picture-wrapper{
-    position: relative;
-    float: right;
-    top: 0;
-    margin-top: -20px;
-    margin-right: -15px;
-    padding-right: 0;
-}
-.picture-wrapper img{
-    width: 100%;
-}
+/*.picture-wrapper{*/
+    /*position: relative;*/
+    /*float: right;*/
+    /*top: 0;*/
+    /*margin-top: -20px;*/
+    /*margin-right: -15px;*/
+    /*padding-right: 0;*/
+    /*width: 50%;*/
+/*}*/
+/*.picture-wrapper img{*/
+    /*width: 100%;*/
+/*}*/
 /*html,*/
 /*body {*/
     /*height: 100%;*/
@@ -265,3 +265,128 @@ color: #d7d7d7;
 /*.container{*/
     /*padding: 0;*/
 /*}*/
+
+#site-about, #site-services, #site-contact, #site-photo, #site-feedback, .footer{
+    background: rgb(51, 51, 51);
+    width: 960px;
+}
+
+#w3{
+    margin-bottom: 0;
+}
+
+#site-about, #site-services, .contact_list, #site-photo{
+    padding: 20px 10px;
+}
+#site-about h2, #site-services h2, #site-contact h2, .albums_list h2, #site-feedback h2{
+    margin-top: 0;
+}
+
+#site-about img{
+    width: 500px;
+    float: right;
+}
+
+.service_main{
+    height: 350px;
+    color:#d7d7d7;
+}
+
+.service_main ul li{
+    width: 50%;
+    float: left;
+    padding-right: 20px;
+}
+.services_list{
+    width: 640px;
+    float: left;
+    overflow: hidden;
+}
+
+.weather{
+    width: 310px;
+    padding: 50px 10px 20px 10px;
+    overflow: hidden;
+    text-align: center;
+}
+.weather button{
+    margin-top: 30px;
+}
+
+.contact_list{
+    color: #d7d7d7;
+    width: 30%;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+}
+.map{
+    width: 70%;
+    height: 325px;
+    overflow: hidden;
+}
+
+.albums_list{
+    width: 300px;
+    overflow: hidden;
+    float: left;
+}
+
+#site-photo .carousel-inner{
+    width: 615px;
+}
+#site-photo #photoCarousel{
+    width: 615px;
+    overflow: hidden;
+}
+
+#site-feedback #leave-feedback{
+    margin: 100px 0 0 150px;
+}
+
+#site-feedback{
+    padding-bottom: 25px;
+}
+.review{
+    width: 50%;
+    float: left;
+}
+.footer{
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 640px) {
+    #site-about, #site-services, #site-contact, #site-photo, #site-feedback, .footer,
+    .services_list, .weather, .map, .albums_list, .photoCarousel, .review, .contact_list{
+        width: 100%;
+    }
+
+    #site-about h2{
+        font-size: 24px;
+    }
+    #site-about img{
+        width: 100%;
+    }
+
+    .contact_list{
+        text-align: center;
+    }
+
+    .services_list, .albums_list, .contact_list{
+        float: none;
+    }
+    .service_main{
+        height: auto;
+    }
+
+    #site-feedback #leave-feedback{
+        margin: 25px 0 0 0;
+    }
+
+    #site-photo #photoCarousel{
+        width: auto;
+    }
+
+
+}

@@ -95,7 +95,7 @@ AppAsset::register($this);
         </div>
     </div>
 
-    <footer class="footer">
+    <footer class="footer dark-wrap">
         <div class="container">
             <div class="footer-menu row">
                 <?php

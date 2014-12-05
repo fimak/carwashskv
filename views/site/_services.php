@@ -1,14 +1,14 @@
 <?php
 use yii\widgets\ActiveForm; ?>
 <div id="site-services">
-    <div class="container">
-        <div class="col-md-8 dark-wrap">
+    <div class="service_main">
+        <div class="services_list dark-wrap">
             <h2 class="yellow nomargin">Услуги и цены</h2>
             <h3>Мойка</h3>
             <ul class="clearfix">
                 <?php foreach($services as $service) : ?>
                     <?php if ($service['type'] == 'CARWASH') : ?>
-                        <li class="col-md-6"><?= $service->service ?> <span class="service-cost  pull-right">- <?= $service->cost ?> руб.</span></li>
+                        <li class=""><?= $service->service ?> <span class="service-cost  pull-right">- <?= $service->cost ?> руб.</span></li>
                     <?php endif; ?>
                 <?php endforeach; ?>
             </ul>
@@ -16,20 +16,18 @@ use yii\widgets\ActiveForm; ?>
             <ul class="clearfix">
                 <?php foreach($services as $service) : ?>
                     <?php if ($service['type'] == 'CAFFE') : ?>
-                        <li class="col-md-6"><?= $service->service ?> <span class="service-cost pull-right">- <?= $service->cost ?> руб.</span></li>
+                        <li class=""><?= $service->service ?> <span class="service-cost pull-right">- <?= $service->cost ?> руб.</span></li>
                     <?php endif; ?>
                 <?php endforeach; ?>
             </ul>
         </div>
-        <div class="col-md-4">
             <div class="weather">
                 <a href="http://clck.yandex.ru/redir/dtype=stred/pid=7/cid=1228/*http://pogoda.yandex.ru/omsk"><img src="http://info.weather.yandex.net/omsk/2.ru.png" border="0" alt=""/><img width="1" height="1" src="http://clck.yandex.ru/click/dtype=stred/pid=7/cid=1227/*http://img.yandex.ru/i/pix.gif" alt="" border="0"/></a>
                 <button value="/schedule/create" class="btn btn-lg btn-success book-car-wash">Записаться на мойку</button>
             </div>
-        </div>
     </div>
-    <div class="container">
-        <div id="site-discount" class="col-md-8 dark-wrap">
+    <div class="">
+        <div id="site-discount" class=" dark-wrap">
             <h2 class="yellow nomargin">Акции и скидки</h2>
             <ul class="clearfix">
                 <?php foreach ($discounts as $discount) : ?>
